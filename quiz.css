@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #a5bfe7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1.title {
+    margin: -1rem 0 .8rem 0;
+    font-size: calc(1.3rem + .5vw);
+}
+
+.quiz {
+    width: calc(550px + 8vw);
+    background-color: #f0e8e8;
+    border-radius: 8px;
+    border: 3px solid black;
+    box-shadow: 0 0 8px #447fd8, 0 0 0 4px #447fd8, 0 0 0 4px #447fd8;
+    overflow: hidden;
+}
+
+.quiz__header {
+    padding: 1rem 2rem 2rem;
+}
+
+h2.quiz__title {
+    text-align: center;
+    font-size: calc(1rem + .5vw);
+    padding: 1rem;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: calc(.9rem + .5vw);
+    margin: 1rem 0;
+}
+
+ul li input {
+    cursor: pointer;
+}
+
+ul li label {
+    margin-left: .3rem;
+    cursor: pointer;
+}
+
+button#submit {
+    width: 100%;
+    font-family: inherit;
+    font-size: calc(.9rem + .5vw);
+    padding: calc(.5rem + .5vw) calc(.8rem + .5vw);
+    background-color: #6797df;
+    color: white;
+    border: none;
+    border-top: 3px solid black;
+    cursor: pointer;
+    transition: all .5s;
+}
+button#submit:hover {
+    background-color: #447fd8;
+}
+
+/*Sweet Alert*/
+.swal-overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.swal-modal {
+    border: 3px solid black;
+    border-radius: 7px;
+    margin-top: 3rem;
+}
+
+.swal-icon {
+    background-color: #d5d5d8;
+}
+
+.swal-title {
+    color: #3d3d3d;
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+
+.swal-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.swal-button {
+    background-color: #f55234;
+    transition: background-color .5s;
+}
+.swal-button:hover {
+    background-color: green !important;
+}
+
+/*Media Queries*/
+@media(max-width: 800px) {
+    .quiz {
+        width: calc(500px + 8vw);
+    }
+}
+
+@media(max-width: 600px) {
+    .quiz {
+        width: calc(400px + 8vw);
+    }
+
+    .quiz__header {
+        padding: .5rem 1.3rem 1rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .quiz {
+        width: calc(320px + 8vw);
+    }
+}
+
+@media(max-width: 300px) {
+    .quiz {
+        width: calc(230px + 8vw);
+    }
+}

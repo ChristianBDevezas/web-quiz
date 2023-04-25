@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <h1 class="title">Web Quiz</h1>
+
+    <div id="quiz" class="quiz">        
+        <div class="quiz__header">
+            <h2 class="quiz__title">Question text</h2>
+            
+            <div class="quiz__items">
+            <ul>
+                <li>
+                    <input type="radio" id="a" name="answer" class="quiz__answer">
+                    <label for="a" id="item-a">Question</label>
+                </li>
+    
+                <li>
+                    <input type="radio" id="b" name="answer" class="quiz__answer">
+                    <label for="b" id="item-b">Question</label>
+                </li>
+    
+                <li>
+                    <input type="radio" id="c" name="answer" class="quiz__answer">
+                    <label for="c" id="item-c">Question</label>
+                </li>
+    
+                <li>
+                    <input type="radio" id="d" name="answer" class="quiz__answer">
+                    <label for="d" id="item-d">Question</label>
+                </li>
+            </ul>
+            </div>        
+        </div>
+
+        <div class="quiz__footer">
+            <button id="submit">Submit Answer</button>
+        </div>
+    </div>
+
+    <!--CDN Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Javascript-->
+    <script src="quiz.js"></script>
+  </body>
+</html>
